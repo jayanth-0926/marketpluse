@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>MarketPulse AI</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #eef5ff
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .nav,
+        .hero,
+        .section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 24px
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800
+        }
+
+        .logo span,
+        h1 span {
+            color: #58d6ff
+        }
+
+        .links {
+            display: flex;
+            gap: 22px;
+            color: #a9bad0
+        }
+
+        .btn {
+            background: #58d6ff;
+            color: #06101c;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-weight: 700;
+            display: inline-block
+        }
+
+        .hero {
+            padding-top: 75px;
+            padding-bottom: 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center
+        }
+
+        h1 {
+            font-size: clamp(44px, 6vw, 70px);
+            line-height: 1;
+            letter-spacing: -3px;
+            margin: 15px 0
+        }
+
+        p {
+            color: #a9bad0;
+            line-height: 1.7
+        }
+
+        .card {
+            background: #0d1d2e;
+            border: 1px solid #24405b;
+            border-radius: 22px;
+            padding: 24px
+        }
+
+        .bars {
+            height: 190px;
+            display: flex;
+            align-items: end;
+            gap: 10px
+        }
+
+        .bar {
+            flex: 1;
+            background: #58d6ff;
+            border-radius: 7px 7px 2px 2px
+        }
+
+        .stats,
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px
+        }
+
+        .stat,
+        .feature {
+            background: #0b1929;
+            border: 1px solid #19334c;
+            border-radius: 15px;
+            padding: 20px
+        }
+
+        .section {
+            padding-top: 65px;
+            padding-bottom: 65px
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 8px
+        }
+
+        .icon {
+            font-size: 28px;
+            margin-bottom: 10px
+        }
+
+        .cta {
+            text-align: center;
+            max-width: 1000px;
+            margin: 40px auto 70px;
+            padding: 55px 25px;
+            border: 1px solid #24506c;
+            border-radius: 22px;
+            background: #0b1929
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #173047;
+            color: #758ba3
+        }
+
+        @media(max-width:750px) {
+            .links {
+                display: none
+            }
+
+            .hero {
+                grid-template-columns: 1fr
+            }
+
+            .grid,
+            .stats {
+                grid-template-columns: 1fr
+            }
+
+            h1 {
+                letter-spacing: -2px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class='nav'>
+        <div class='logo'>Market<span>Pulse</span> AI</div>
+        <div class='links'><a href='#solution'>Solution</a><a href='#features'>Features</a><a href='#how'>How it
+                works</a></div><a class='btn' href='#contact'>Book a Demo</a>
+    </nav>
+    <header class='hero'>
+        <div><small>AI-powered marketing for small businesses</small>
+            <h1>Make smarter marketing <span>decisions.</span></h1>
+            <p>Understand your customers, identify market demand, and discover practical marketing opportunities from
+                one simple platform.</p><a class='btn' href='#contact'>Get a Demo →</a>
+        </div>
+        <div class='card'><b>Business Insights</b>
+            <div class='bars'><i class='bar' style='height:40%'></i><i class='bar' style='height:55%'></i><i class='bar'
+                    style='height:48%'></i><i class='bar' style='height:70%'></i><i class='bar'
+                    style='height:85%'></i><i class='bar' style='height:95%'></i></div>
+            <div class='stats'>
+                <div class='stat'><b>+28%</b><small>Reach</small></div>
+                <div class='stat'><b>4.7x</b><small>Engagement</small></div>
+                <div class='stat'><b>₹</b><small>Cost insights</small></div>
+            </div>
+        </div>
+    </header>
+    <section class='section' id='solution'>
+        <h2>Stop guessing. Start understanding.</h2>
+        <p>Small businesses often have limited time, marketing expertise, budgets, and customer information.</p>
+        <div class='grid'>
+            <div class='feature'>
+                <div class='icon'>🎯</div>
+                <h3>Know your customers</h3>
+                <p>Identify target audiences and understand what matters to them.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>📈</div>
+                <h3>Spot demand</h3>
+                <p>Turn market and customer signals into clear opportunities.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>💡</div>
+                <h3>Act with confidence</h3>
+                <p>Get practical marketing recommendations instead of guesswork.</p>
+            </div>
+        </div>
+    </section>
+    <section class='section' id='features'>
+        <h2>Everything you need to market smarter.</h2>
+        <div class='grid'>
+            <div class='feature'>
+                <div class='icon'>🔎</div>
+                <h3>Customer Insights</h3>
+                <p>Understand your target customers and interests.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>🤖</div>
+                <h3>AI Recommendations</h3>
+                <p>Get personalized marketing ideas for your business.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>📣</div>
+                <h3>Campaign Ideas</h3>
+                <p>Create practical promotional campaign concepts.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>📊</div>
+                <h3>Performance Analytics</h3>
+                <p>Track reach and engagement in simple visuals.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>🏪</div>
+                <h3>Built for MSMEs</h3>
+                <p>Simple workflows for owners without marketing expertise.</p>
+            </div>
+            <div class='feature'>
+                <div class='icon'>💰</div>
+                <h3>Cost-conscious</h3>
+                <p>Make better decisions before spending your marketing budget.</p>
+            </div>
+        </div>
+    </section>
+    <section class='section' id='how'>
+        <h2>How MarketPulse works</h2>
+        <div class='grid'>
+            <div class='feature'><b>01 — CONNECT</b>
+                <h3>Tell us about your business</h3>
+                <p>Share your business type, products, location and audience.</p>
+            </div>
+            <div class='feature'><b>02 — DISCOVER</b>
+                <h3>Understand your market</h3>
+                <p>Explore customer signals and demand trends.</p>
+            </div>
+            <div class='feature'><b>03 — GROW</b>
+                <h3>Take action</h3>
+                <p>Use recommendations and track what works.</p>
+            </div>
+        </div>
+    </section>
+    <section class='cta' id='contact'>
+        <h2>Ready to market smarter?</h2>
+        <p>Join our early customer group and help shape MarketPulse AI.</p><a class='btn'
+            href='mailto:marketpulse.ai.demo@gmail.com'>Request a Demo</a>
+    </section>
+    <footer>© 2026 MarketPulse AI · Smarter Marketing. Bigger Growth.</footer>
+</body>
+
+</html>
